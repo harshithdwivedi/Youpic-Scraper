@@ -1,0 +1,1 @@
+data class Photographer(val name: String, val link: String)

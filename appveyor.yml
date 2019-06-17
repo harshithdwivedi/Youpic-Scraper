@@ -1,0 +1,14 @@
+version: '{build}'
+
+skip_tags: true
+
+clone_depth: 5
+
+install:
+  - choco install jdk8
+  - choco install ie11
+  - refreshenv
+
+build_script:
+  - gradlew.bat clean test -Dbrowser=ie
+
