@@ -1,13 +1,15 @@
 import com.opencsv.CSVWriter
 import org.openqa.selenium.By
 import org.openqa.selenium.PageLoadStrategy
+import org.openqa.selenium.StaleElementReferenceException
+import org.openqa.selenium.WebDriverException
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import java.io.File
 import java.io.FileWriter
 import java.util.HashSet
 
-val CSV_FILE_PATH = "C:\\Users\\harsh\\Desktop\\photographers.csv"
+val CSV_FILE_PATH = "/Users/harshitdwivedi/Desktop/IdeaProjects/YouPic-Automessager/photographers.csv"
 lateinit var writer: CSVWriter
 val file = File(CSV_FILE_PATH)
 val outputfile = FileWriter(file)
@@ -19,11 +21,11 @@ fun main() {
 
 fun openWebsiteAndLogIn() {
 
-    System.setProperty("webdriver.chrome.driver", "C:\\Users\\harsh\\Downloads\\chromedriver.exe")
+    System.setProperty("webdriver.chrome.driver", "/Users/harshitdwivedi/Downloads/chromedriver")
 
     val options = ChromeOptions()
 
-    options.addArguments("--disable-extensions")
+    options.addArguments("--disable-extensiorns")
     options.addArguments("--incognito")
     options.addArguments("enable-automation")
     options.addArguments("--no-sandbox")
@@ -63,18 +65,21 @@ fun openWebsiteAndLogIn() {
         Thread.sleep(1500)
 
         //Click Follow
-        driver.findElement(By.cssSelector(".layout-item > a:nth-child(1)")).click()
-        Thread.sleep(1000)
+        val element = driver.findElement(By.cssSelector(".layout-item > a:nth-child(1)"))
+        if (element.text == "Following") {
 
-        //Click Message
-        Thread.sleep(1000)
-        driver.findElement(By.cssSelector(".layout-item > a:nth-child(2)")).click()
+        } else {
+            element.click()
+            //Click Message
+            Thread.sleep(200)
+            driver.findElement(By.cssSelector(".layout-item > a:nth-child(2)")).click()
 
-        Thread.sleep(1500)
+            Thread.sleep(800)
 
-        driver.findElement(By.cssSelector(".input-lg")).sendKeys(
-            """
-Hi ${it.name}, hope you're doing good!
+            try {
+                driver.findElement(By.cssSelector(".input-lg")).sendKeys(
+                    """
+Hi ${it.name.split(" ").first()}, hope you're doing good!
 I am a student at MIT BootCamps and being a hobbyist photographer myself; I was doing a survey to study the time spent by photographers in culling and organizing their photos.
 I was wondering if you would be able to devote a few minutes of your time to answer some questions, your experience and expertise will surely help us a lot in understanding and potentially improving every photographer's workflow!
 
@@ -85,11 +90,14 @@ https://forms.gle/EijfGvmcW1tBtV6v8
 The form is totally anonymous and won't take more than 5 minutes of your time, I’d appreciate if you could take out some time to fill it out.
 Thanks!
         """.trimIndent()
-        )
+                )
+            } catch (e: WebDriverException) {
+            }
 
-        Thread.sleep(1500)
+            Thread.sleep(800)
 
-        driver.findElement(By.cssSelector(".btn-primary-outline")).click()
+            driver.findElement(By.cssSelector(".btn-primary-outline")).click()
+        }
     }
 
     writer.close()
@@ -126,7 +134,7 @@ private fun signIn(driver: ChromeDriver) {
 
     Thread.sleep(800)
 
-    val userName = "harshithdwivedi@gmail.com"
+    val userName = "twitter@twitter3405973906.com"
     val password = "youpic@123"
 
     driver.findElement(By.name("user")).sendKeys(userName)
@@ -165,13 +173,17 @@ private fun getPhotographers(driver: ChromeDriver): HashSet<Photographer> {
 
     //Recursive call to scroll more
     scroll(driver, 300)
-    getPhotographers(driver)
+    try {
+        getPhotographers(driver)
+    } catch (e: StaleElementReferenceException) {
+        return photographersWithUrl
+    }
     return photographersWithUrl
 }
 
 private fun scroll(driver: ChromeDriver, amount: Int) {
     driver.executeScript("window.scrollBy(0,$amount);")
-    Thread.sleep(300)
+    Thread.sleep(50)
 }
 
 fun search(driver: ChromeDriver) {

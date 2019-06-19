@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.qameta.allure:allure-junit-platform:2.7.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-junit-platform/2.7.0/fa85d73031b020bed8f781fe6ab7422d911d28a6/allure-junit-platform-2.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-junit-platform/2.7.0/be0e55f9945020a78a97ec73887385a3b0578d79/allure-junit-platform-2.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

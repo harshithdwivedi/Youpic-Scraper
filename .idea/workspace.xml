@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec167a0b-2729-4498-afd3-2c7b6c57283f" name="Default Changelist" comment="" />
+    <list default="true" id="4fb60e40-000b-486f-9c9e-45a069ab93c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -21,107 +27,20 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/template/ExampleTemplateIT.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="186" column="5" selection-start-line="118" selection-end-line="186" selection-end-column="5" />
-              <folding>
-                <element signature="e#293#618#0" />
-                <element signature="n#!!block;n#open website and log in#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="e#1796#3163#2" />
-                <element signature="e#2278#2730#0" />
-                <element signature="n#!!block;n#createCsv#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="n#!!block;n#signIn#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="n#!!block;n#deleteCookiesAndLogin#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="n#!!block;n#getPhotographers#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="e#4270#4396#2" />
-                <element signature="n#!!block;n#scroll#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="n#!!block;n#search#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="n#!!block;n#setWedding#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="n#!!block;n#setLocation#0;n#!!block;n#ExampleTemplateIT#0" />
-                <element signature="n#!!block;n#wait#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+            <state relative-caret-position="68">
+              <caret line="137" column="30" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
               <folding>
                 <element signature="e#0#268#0" expanded="true" />
-                <element signature="n#!!block;n#signIn#0" />
-                <element signature="n#!!block;n#deleteCookiesAndLogin#0" />
-                <element signature="n#!!block;n#search#0" />
-                <element signature="n#!!block;n#setWedding#0" />
-                <element signature="n#!!block;n#setLocation#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Photographers.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="47" selection-start-column="47" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle.kts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/958c401b129f64de74af4b11a0894693edfa168d/kotlin-stdlib-common-1.3.31-sources.jar!/generated/_Sets.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2208">
-              <caret line="141" column="29" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/958c401b129f64de74af4b11a0894693edfa168d/kotlin-stdlib-common-1.3.31-sources.jar!/kotlin/collections/Sets.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/Collections.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4320">
-              <caret line="284" column="20" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>add</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,18 +48,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/tests/template/Photographers.kt" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/template/ExampleTemplateIT.kt" />
-        <option value="$PROJECT_DIR$/build.gradle.kts" />
         <option value="$PROJECT_DIR$/src/main/java/Main.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="100" />
-    <option name="y" value="40" />
-    <option name="width" value="2800" />
-    <option name="height" value="1840" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,53 +63,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="basic-selenium-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-selenium-project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="YouPic-Automessager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="basic-selenium-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-selenium-project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="YouPic-Automessager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-selenium-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-selenium-project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-selenium-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-selenium-project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="YouPic-Automessager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic-selenium-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-selenium-project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="YouPic-Automessager" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-selenium-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-selenium-project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basic-selenium-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basic-selenium-project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,15 +97,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\harsh\Desktop\IdeaProjects\basic-selenium-project\src\main\java" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle.kts" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -225,59 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="ExampleTemplateIT.open website and log in" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.template.ExampleTemplateIT.open website and log in&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ExampleTemplateIT.createCsv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="basic-selenium-project.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.template" />
-      <option name="MAIN_CLASS_NAME" value="tests.template.ExampleTemplateIT" />
-      <option name="METHOD_NAME" value="createCsv" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExampleTemplateIT.open website and log in" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="basic-selenium-project.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.template" />
-      <option name="MAIN_CLASS_NAME" value="tests.template.ExampleTemplateIT" />
-      <option name="METHOD_NAME" value="open website and log in" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="basic-selenium-project.main" />
       <option name="VM_PARAMETERS" />
@@ -294,9 +129,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="JUnit.ExampleTemplateIT.createCsv" />
-        <item itemvalue="JUnit.ExampleTemplateIT.open website and log in" />
-        <item itemvalue="Gradle.ExampleTemplateIT.open website and log in" />
       </list>
     </recent_temporary>
   </component>
@@ -305,156 +137,62 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ec167a0b-2729-4498-afd3-2c7b6c57283f" name="Default Changelist" comment="" />
-      <created>1560425523278</created>
+      <changelist id="4fb60e40-000b-486f-9c9e-45a069ab93c7" name="Default Changelist" comment="" />
+      <created>1560778562542</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560425523278</updated>
+      <updated>1560778562542</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="ExampleTemplateIT_open_website_and_log_in - 2019.06.13 at 20h 44m 28s.xml">
-      <configuration name="ExampleTemplateIT.open website and log in" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_open_website_and_log_in - 2019.06.13 at 20h 48m 19s.xml">
-      <configuration name="ExampleTemplateIT.open website and log in" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_open_website_and_log_in - 2019.06.13 at 20h 51m 10s.xml">
-      <configuration name="ExampleTemplateIT.open website and log in" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_open_website_and_log_in - 2019.06.13 at 20h 54m 54s.xml">
-      <configuration name="ExampleTemplateIT.open website and log in" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_open_website_and_log_in - 2019.06.13 at 21h 03m 40s.xml">
-      <configuration name="ExampleTemplateIT.open website and log in" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_createCsv - 2019.06.17 at 18h 16m 14s.xml">
-      <configuration name="ExampleTemplateIT.createCsv" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_createCsv - 2019.06.17 at 18h 16m 27s.xml">
-      <configuration name="ExampleTemplateIT.createCsv" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_createCsv - 2019.06.17 at 18h 19m 37s.xml">
-      <configuration name="ExampleTemplateIT.createCsv" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_createCsv - 2019.06.17 at 18h 20m 54s.xml">
-      <configuration name="ExampleTemplateIT.createCsv" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTemplateIT_createCsv - 2019.06.17 at 18h 21m 31s.xml">
-      <configuration name="ExampleTemplateIT.createCsv" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2563574" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32977462" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32977462" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.32977462" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32977462" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Gradle" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/annotations/Browser.kt" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/annotations/IfReachable.kt" />
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/driver/WindowManager.kt" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/TestStatusLogger.kt" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/Utils.kt" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/config/BrowserTest.kt" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/958c401b129f64de74af4b11a0894693edfa168d/kotlin-stdlib-common-1.3.31-sources.jar!/generated/_Sets.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.141.59/8950c1557ead2cdba4fdb9ba6f107dce3b5f1520/selenium-remote-driver-3.141.59-sources.jar!/org/openqa/selenium/remote/service/DriverService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2208">
-          <caret line="141" column="29" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/958c401b129f64de74af4b11a0894693edfa168d/kotlin-stdlib-common-1.3.31-sources.jar!/kotlin/collections/Sets.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/Collections.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="284" column="20" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Photographers.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/template/ExampleTemplateIT.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="186" column="5" selection-start-line="118" selection-end-line="186" selection-end-column="5" />
-          <folding>
-            <element signature="e#293#618#0" />
-            <element signature="n#!!block;n#open website and log in#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="e#1796#3163#2" />
-            <element signature="e#2278#2730#0" />
-            <element signature="n#!!block;n#createCsv#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="n#!!block;n#signIn#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="n#!!block;n#deleteCookiesAndLogin#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="n#!!block;n#getPhotographers#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="e#4270#4396#2" />
-            <element signature="n#!!block;n#scroll#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="n#!!block;n#search#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="n#!!block;n#setWedding#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="n#!!block;n#setLocation#0;n#!!block;n#ExampleTemplateIT#0" />
-            <element signature="n#!!block;n#wait#0" />
-          </folding>
+        <state relative-caret-position="1747">
+          <caret line="353" column="14" selection-start-line="353" selection-start-column="14" selection-end-line="353" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+        <state relative-caret-position="68">
+          <caret line="137" column="30" selection-start-line="137" selection-start-column="30" selection-end-line="137" selection-end-column="30" />
           <folding>
             <element signature="e#0#268#0" expanded="true" />
-            <element signature="n#!!block;n#signIn#0" />
-            <element signature="n#!!block;n#deleteCookiesAndLogin#0" />
-            <element signature="n#!!block;n#search#0" />
-            <element signature="n#!!block;n#setWedding#0" />
-            <element signature="n#!!block;n#setLocation#0" />
           </folding>
         </state>
       </provider>
