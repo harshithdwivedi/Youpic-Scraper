@@ -1,1 +1,6 @@
-data class Photographer(val name: String, val link: String)
+import com.opencsv.bean.CsvBindByName
+
+data class Photographer(
+    @CsvBindByName val name: String,
+    @CsvBindByName val link: String
+)
