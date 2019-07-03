@@ -1,4 +1,5 @@
 import com.opencsv.CSVWriter
+import com.opencsv.bean.CsvToBeanBuilder
 import org.openqa.selenium.By
 import org.openqa.selenium.PageLoadStrategy
 import org.openqa.selenium.StaleElementReferenceException
@@ -7,16 +8,22 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import java.io.File
 import java.io.FileWriter
-import java.util.HashSet
-import java.io.Reader
+import java.lang.Exception
 import java.nio.file.Files
 import java.nio.file.Paths
-import com.opencsv.bean.CsvToBeanBuilder
-import com.opencsv.bean.CsvToBean
-
+import java.util.*
 
 val CSV_FILE_PATH = "C:\\Users\\harsh\\Desktop\\IdeaProjects\\YouPic-Automessenger\\photographers.csv"
-lateinit var writer: CSVWriter
+
+val writer by lazy {
+    CSVWriter(
+        outputfile, ';',
+        CSVWriter.NO_QUOTE_CHARACTER,
+        CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+        CSVWriter.DEFAULT_LINE_END
+    )
+}
+
 val file = File(CSV_FILE_PATH)
 val outputfile = FileWriter(file)
 
@@ -34,18 +41,16 @@ val csvToBean by lazy {
 val alreadyScannedPhotographers = mutableListOf<Photographer>()
 
 fun main() {
-    createCsv()
+//    createCsv()
     alreadyScannedPhotographers.clear()
     alreadyScannedPhotographers.addAll(csvToBean.parse())
     openWebsiteAndLogIn()
 }
 
 fun openWebsiteAndLogIn() {
-
     System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe")
 
     val options = ChromeOptions()
-
     options.addArguments("--disable-extensiorns")
     options.addArguments("--incognito")
     options.addArguments("enable-automation")
@@ -66,41 +71,45 @@ fun openWebsiteAndLogIn() {
     driver.get("https://youpic.com/photographers")
 
 //        setWedding(driver)
-//        setLocation(driver, "India")
-//        search(driver)
+    setLocation(driver, "Paris")
+    search(driver)
 
     scroll(driver, 400)
     Thread.sleep(1000)
 
     val photographers = getPhotographers(driver)
 
-    System.out.println("Size of array : ${photographers.size}")
+    println("Size of array : ${photographers.size}")
 
-    photographers.forEach {
+    photographers
+        .sortedWith(compareBy { it.name })
+        .forEachIndexed { index, it ->
 
-        //Write photographers to csv
-        val photographer = arrayOf(it.name, it.link)
-        writePhotographer(photographer)
+            //            if (index > 200) {
 
-        driver.get(it.link)
-        Thread.sleep(1500)
+            //Write photographers to csv
+            val photographer = arrayOf(it.name, it.link)
+            writePhotographer(photographer)
 
-        //Click Follow
-        try {
-            val element = driver.findElement(By.cssSelector(".layout-item > a:nth-child(1)"))
-            if (element.text == "Following") {
+            driver.get(it.link)
+            Thread.sleep(1500)
 
-            } else {
-                element.click()
-                //Click Message
-                Thread.sleep(400)
-                driver.findElement(By.cssSelector(".layout-item > a:nth-child(2)")).click()
+            //Click Follow
+            try {
+                val element = driver.findElement(By.cssSelector(".layout-item > a:nth-child(1)"))
+                if (element.text == "Following") {
 
-                Thread.sleep(800)
+                } else {
+                    element.click()
+                    //Click Message
+                    Thread.sleep(400)
+                    driver.findElement(By.cssSelector(".layout-item > a:nth-child(2)")).click()
 
-                try {
-                    driver.findElement(By.cssSelector(".input-lg")).sendKeys(
-                        """
+                    Thread.sleep(800)
+
+                    try {
+                        driver.findElement(By.cssSelector(".input-lg")).sendKeys(
+                            """
 Hi ${it.name.split(" ").first()}, hope you're doing good!
 
 I am a student at MIT BootCamps and being a hobbyist photographer myself; I was doing a survey to study the time spent by photographers in culling and organizing their photos.
@@ -114,45 +123,47 @@ The form is totally anonymous and won't take more than 5 minutes of your time, I
 
 Thanks!
         """.trimIndent()
-                    )
-                } catch (e: WebDriverException) {
+                        )
+                    } catch (e: WebDriverException) {
+                    }
+
+                    Thread.sleep(500)
+
+                    try {
+                        driver.findElement(By.cssSelector(".btn-primary-outline")).click()
+                    } catch (e: Exception) {
+
+                    }
+                    Thread.sleep(500)
                 }
+            } catch (e: NoSuchElementException) {
 
-                Thread.sleep(2000)
-
-                driver.findElement(By.cssSelector(".btn-primary-outline")).click()
-
-                Thread.sleep(1000)
             }
+//            }
         }
-        catch (e : NoSuchElementException){
-
-        }
-    }
-
     writer.close()
     driver.close()
 }
 
-private fun createCsv() {
-    writer = CSVWriter(
-        outputfile, ';',
-        CSVWriter.NO_QUOTE_CHARACTER,
-        CSVWriter.DEFAULT_ESCAPE_CHARACTER,
-        CSVWriter.DEFAULT_LINE_END
-    )
-    val header = arrayOf("name", "link")
-    writer.writeNext(header)
-//    writer.close()
-}
+//private fun createCsv() {
+//    writer = CSVWriter(
+//        outputfile, ';',
+//        CSVWriter.NO_QUOTE_CHARACTER,
+//        CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+//        CSVWriter.DEFAULT_LINE_END
+//    )
+//    val header = arrayOf("name", "link")
+//    writer.writeNext(header)
+////    writer.close()
+//}
 
 fun writePhotographer(photographer: Array<String>) {
-    writer = CSVWriter(
-        outputfile, ';',
-        CSVWriter.NO_QUOTE_CHARACTER,
-        CSVWriter.DEFAULT_ESCAPE_CHARACTER,
-        CSVWriter.DEFAULT_LINE_END
-    )
+//    writer = CSVWriter(
+//        outputfile, ';',
+//        CSVWriter.NO_QUOTE_CHARACTER,
+//        CSVWriter.DEFAULT_ESCAPE_CHARACTER,
+//        CSVWriter.DEFAULT_LINE_END
+//    )
 
     writer.writeNext(photographer)
 //    writer.close()
@@ -164,7 +175,7 @@ private fun signIn(driver: ChromeDriver) {
 
     Thread.sleep(800)
 
-    val userName = "twitter@twitter3405973906.com"
+    val userName = "manasbagula@gmail.com"
     val password = "youpic@123"
 
     driver.findElement(By.name("user")).sendKeys(userName)
@@ -179,18 +190,25 @@ private fun getPhotographers(driver: ChromeDriver): HashSet<Photographer> {
     val photographers = driver.findElements(By.cssSelector(".link-underline"))
 
     photographers.forEach { webElement ->
-        val photographer = Photographer(webElement.text, webElement.getAttribute("href"))
-        if (!alreadyScannedPhotographers.contains(photographer))
+        try {
+            val photographer = Photographer(webElement.text, webElement.getAttribute("href"))
             photographersWithUrl.add(photographer)
+            //Replace this with the name of last photographer in your seaech results
+            if (photographer.name == "Clara Achour") return photographersWithUrl
+        } catch (e: Exception) {
+            e.printStackTrace()
+            print("Size of array ${photographersWithUrl.size}")
+        }
     }
 
-    if (photographers.size < 10 || photographersWithUrl.size > 100) return photographersWithUrl
+    if (photographers.size < 15 || photographersWithUrl.size > 600) return photographersWithUrl
 
     //Recursive call to scroll more
-    scroll(driver, 300)
+    scroll(driver, 350)
     try {
         getPhotographers(driver)
     } catch (e: StaleElementReferenceException) {
+        e.printStackTrace()
         return photographersWithUrl
     }
     return photographersWithUrl
@@ -198,7 +216,7 @@ private fun getPhotographers(driver: ChromeDriver): HashSet<Photographer> {
 
 private fun scroll(driver: ChromeDriver, amount: Int) {
     driver.executeScript("window.scrollBy(0,$amount);")
-    Thread.sleep(50)
+//    Thread.sleep(200)
 }
 
 fun search(driver: ChromeDriver) {
